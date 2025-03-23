@@ -1,9 +1,15 @@
-package study.boj;
+package study.boj.one;
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class 체커 {
+    // Brute Force
+
+    //x,y의 좌표만 검사하면 된다.
     public static void main(String[] args) throws IOException {
         // 빠른 입력
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
