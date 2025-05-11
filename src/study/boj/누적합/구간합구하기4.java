@@ -1,4 +1,4 @@
-package study.boj.정수론;
+package study.boj.누적합;
 
 import java.util.Scanner;
 
