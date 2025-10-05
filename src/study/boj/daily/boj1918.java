@@ -5,8 +5,21 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
+/**
+ * 백준 1918번 - 후위 표기식
+ * 
+ * 문제: 중위표기식을 후위표기식으로 변환
+ * 
+ * 알고리즘: 스택 + 연산자 우선순위
+ * - 피연산자는 바로 출력
+ * - 연산자는 스택의 top보다 우선순위가 높을 때까지 pop하고 push
+ * - 여는 괄호는 스택에 push, 닫는 괄호는 여는 괄호까지 모든 연산자 pop
+ * - 마지막에 스택의 모든 연산자 출력
+ * 
+ * 시간복잡도: O(N)
+ * 공간복잡도: O(N)
+ */
 public class boj1918 {
-    // 중위표기식을 후위표기식으로 변환하는 문제
     public static void main(String[] args) throws IOException {
         // 입력을 받기 위한 BufferedReader
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
