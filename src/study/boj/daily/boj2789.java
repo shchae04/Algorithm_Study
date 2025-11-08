@@ -5,7 +5,19 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * 유학 금지 - 비트마스크 최적화 (대문자 보장)
+ * 백준 2789번 - 유학 금지
+ * 
+ * 문제: 'CAMBRIDGE' 문자가 포함된 문자열에서 해당 문자들을 모두 제거한 결과를 출력
+ * 대문자로만 이루어진 문자열 입력
+ * 
+ * 알고리즘: 비트마스킹 최적화
+ * - 'CAMBRIDGE'에 해당하는 문자들을 비트마스크로 사전 설정
+ * - 각 문자마다 해당 비트와 AND 연산으로 빠른 판단
+ * - 금지 문자가 아닌 경우만 StringBuilder에 추가
+ * - O(1) 시간에 문자 필터링 가능
+ * 
+ * 시간복잡도: O(N) - N: 문자열 길이
+ * 공간복잡도: O(N)
  */
 public class boj2789 {
 
